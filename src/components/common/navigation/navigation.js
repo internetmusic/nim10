@@ -1,19 +1,10 @@
-import React, { Component } from "react"
+import React, {Component} from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
-import { Menu, X } from "react-feather"
+import {Menu, X} from "react-feather"
 
-import { Container } from "../../global"
-import {
-  Nav,
-  NavItem,
-  Brand,
-  StyledContainer,
-  NavListWrapper,
-  MobileMenu,
-  Mobile,
-  ActionsContainer,
-} from "./style"
+import {Container} from "../../global"
+import {ActionsContainer, Brand, Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer,} from "./style"
 
 const NAV_ITEMS = ["What", "Why", "Who", ""]
 
@@ -77,7 +68,7 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Finance
+                New Internet Media
               </AnchorLink>
             </Scrollspy>
           </Brand>
